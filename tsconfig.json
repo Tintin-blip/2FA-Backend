@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "module": "node16",
+      "target": "es2020", // 
+      "strict": true,
+      "declaration": true,
+      "sourceMap": true,
+      "declarationMap": true
+     
+    },
+    "include": ["*.ts"] // include all fields that end with .ts extension
+  } 
