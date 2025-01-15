@@ -15,7 +15,7 @@ export class TOTP implements ITOTP {
     
           const secret:string = await this.userHelper.getTokenByUserId(userId)
           
-            authenticator.options = {digits:6, step: 30,window: [0,1]};
+            authenticator.options = {digits:6, step: 30,window: [1,2]};
             const isValid = authenticator.verify({
               
               token: userInputCode,
